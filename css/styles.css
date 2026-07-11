@@ -472,3 +472,6 @@ html { overflow-anchor: none; }                 /* stop scroll-anchoring from ji
 @media (prefers-reduced-motion: reduce){
   .ambient-gear, .ambient-blob, .hero-tag { animation: none; }
 }
+
+/* flat SVG logo mark */
+.brand-logo{box-shadow:none!important;border-radius:0!important;}
