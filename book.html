@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Service | Pretsell's Auto — Burlington, ON</title>
+  <meta name="description" content="Book a service at Pretsell's Auto in Burlington, ON. Choose your services, tell us when, and request your appointment — oil changes, brakes, diagnostics, tires and more. All makes & models." />
+  <meta name="theme-color" content="#2563EB" />
+  <meta property="og:title" content="Book a Service | Pretsell's Auto" />
+  <meta property="og:description" content="Request your appointment in seconds — or call (905) 637-1122 for an honest quote." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do you work on all makes and models?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — foreign and domestic, cars, SUVs and light trucks." } },
+      { "@type": "Question", "name": "Will I get a quote before you start?", "acceptedAnswer": { "@type": "Answer", "text": "Always. We diagnose first and give you a firm, upfront quote before any work begins." } },
+      { "@type": "Question", "name": "Do you provide a warranty?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — our repairs are backed by a workmanship warranty. Ask us for the details on your service." } },
+      { "@type": "Question", "name": "Where are you located?", "acceptedAnswer": { "@type": "Answer", "text": "4129 Harvester Rd, Burlington, ON L7L 5M3. Call us at (905) 637-1122." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="Pretsell's Auto home">
+        <img src="assets/logo-mark.png" alt="Pretsell's Auto" class="brand-logo" />
+        <span class="brand-name"><b>Pretsell's Auto</b><small>Services · Burlington</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#gallery">Our Work</a>
+        <a href="book.html" class="active">Book</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+19056371122" class="nav-phone"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
+        <a href="#quote" class="btn btn--sm">Book a Service</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE DRAWER ============ -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="mobile-drawer" id="drawer" aria-label="Mobile menu">
+    <div class="drawer-head">
+      <img src="assets/logo-mark.png" alt="Pretsell's Auto" style="height:44px;border-radius:10px" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav>
+      <a href="index.html">Home <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="services.html">Services <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="index.html#gallery">Our Work <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="book.html" class="active">Book <i class="fa-solid fa-chevron-right"></i></a>
+    </nav>
+    <div class="drawer-cta">
+      <a href="#quote" class="btn btn--block">Book a Service</a>
+      <a href="tel:+19056371122" class="btn btn--ghost btn--block"><i class="fa-solid fa-phone"></i> Call the Shop</a>
+    </div>
+    <div class="drawer-contact">
+      <a href="tel:+19056371122"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
+      <span><i class="fa-solid fa-location-dot"></i> 4129 Harvester Rd, Burlington</span>
+    </div>
+  </aside>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs reveal"><a href="index.html">Home</a> <span>/</span> <span>Book</span></div>
+      <span class="eyebrow eyebrow--center reveal d1" style="margin-top:14px">Book Your Service</span>
+      <h1 class="reveal d1">Request an <span class="text-accent">appointment</span></h1>
+      <p class="reveal d2">Pick your services, tell us when works, and send your request. Prefer to talk it through? Call the shop at (905) 637-1122.</p>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING FORM ============ -->
+  <section class="section" id="quote" style="padding-top:16px">
+    <div class="container">
+      <div class="quote-wrap">
+        <div class="quote-side reveal">
+          <h2>Honest quotes,<br/>quality repairs</h2>
+          <p>Request your service in under a minute — no account needed. We'll confirm your appointment and give you a firm quote.</p>
+          <div class="quote-benefits">
+            <div class="quote-benefit"><i class="fa-solid fa-bolt"></i><div><b>Quick &amp; easy</b><span>Request a slot in seconds.</span></div></div>
+            <div class="quote-benefit"><i class="fa-solid fa-car"></i><div><b>All makes &amp; models</b><span>Foreign &amp; domestic.</span></div></div>
+            <div class="quote-benefit"><i class="fa-solid fa-file-invoice-dollar"></i><div><b>Upfront pricing</b><span>A firm quote before we start.</span></div></div>
+          </div>
+          <div class="quote-live">
+            <div class="quote-live-card">
+              <div class="label">Estimated from</div>
+              <div class="est" id="estAmount">$0</div>
+              <small id="estMeta">Select your services</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-form reveal d1">
+          <form id="quoteForm" novalidate>
+            <div class="form-body">
+              <div class="stepper">
+                <div class="st active"><span class="n">1</span><span class="t">Service</span><span class="bar"></span></div>
+                <div class="st"><span class="n">2</span><span class="t">Vehicle &amp; When</span><span class="bar"></span></div>
+                <div class="st"><span class="n">3</span><span class="t">Details</span></div>
+              </div>
+
+              <!-- STEP 1 -->
+              <div class="fstep active">
+                <div class="field">
+                  <label>Which services? <span class="req">*</span> <span style="color:var(--ink-soft);font-weight:400">(pick any)</span></label>
+                  <div class="chip-select">
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Oil Change" /><span>Oil Change · from $50</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Brakes (per axle)" /><span>Brakes · from $180</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Tire Rotation" /><span>Tire Rotation · $40</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Wheel Alignment" /><span>Wheel Alignment · $110</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Diagnostics" /><span>Diagnostics · from $110</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Battery Service" /><span>Battery Service · from $180</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="A/C Service" /><span>A/C Service · from $140</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Safety Inspection" /><span>Safety Inspection · from $90</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Suspension Repair" /><span>Suspension · from $250</span></label>
+                    <label class="chip-opt"><input type="checkbox" name="services" value="Tune-Up" /><span>Tune-Up · from $160</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 2 -->
+              <div class="fstep">
+                <div class="field-row">
+                  <div class="field"><label for="vehicle">Vehicle <span style="color:var(--ink-soft);font-weight:400">(year, make, model)</span></label><input type="text" id="vehicle" name="vehicle" placeholder="e.g. 2018 Honda Civic" /></div>
+                  <div class="field"><label for="eventDate">Preferred date</label><input type="date" id="eventDate" name="eventDate" /></div>
+                </div>
+                <div class="field">
+                  <label>Preferred time</label>
+                  <div class="chip-select">
+                    <label class="chip-opt"><input type="radio" name="time" value="Morning" /><span><i class="fa-solid fa-sun"></i> Morning</span></label>
+                    <label class="chip-opt"><input type="radio" name="time" value="Afternoon" /><span><i class="fa-solid fa-cloud-sun"></i> Afternoon</span></label>
+                    <label class="chip-opt"><input type="radio" name="time" value="Any time" checked /><span>Any time</span></label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="notes">What's going on? <span style="color:var(--ink-soft);font-weight:400">(symptoms, noises, warning lights)</span></label>
+                  <textarea id="notes" name="message" placeholder="e.g. grinding noise when braking, check-engine light is on…"></textarea>
+                </div>
+              </div>
+
+              <!-- STEP 3 -->
+              <div class="fstep">
+                <div class="field-row">
+                  <div class="field"><label for="name">Your name <span class="req">*</span></label><input type="text" id="name" name="name" required placeholder="Full name" /></div>
+                  <div class="field"><label for="phone">Phone <span class="req">*</span></label><input type="tel" id="phone" name="phone" required placeholder="(000) 000-0000" /></div>
+                </div>
+                <div class="field"><label for="email">Email <span style="color:var(--ink-soft);font-weight:400">(optional)</span></label><input type="email" id="email" name="email" placeholder="you@email.com" /></div>
+                <input type="text" class="hp" name="companyWebsite" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <p style="font-size:.86rem;color:var(--ink-soft);margin-top:6px"><i class="fa-solid fa-lock" style="color:var(--navy-bright)"></i> Your details stay private — used only to confirm your appointment.</p>
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn btn--ghost hidden" id="fBack"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                <button type="button" class="btn" id="fNext">Continue <i class="fa-solid fa-arrow-right"></i></button>
+                <button type="submit" class="btn" id="fSubmit" style="display:none"><i class="fa-solid fa-paper-plane"></i> Request Appointment</button>
+              </div>
+            </div>
+
+            <div class="form-success" id="formSuccess">
+              <div class="check"><i class="fa-solid fa-check"></i></div>
+              <h3>Almost there!</h3>
+              <p>One last step: send us your request, or give the shop a quick call and we'll get you booked in.</p>
+              <div class="hero-ctas" style="justify-content:center">
+                <a href="#" id="successEmail" class="btn btn--lg"><i class="fa-solid fa-paper-plane"></i> Send Request</a>
+                <a href="tel:+19056371122" class="btn btn--ghost btn--lg"><i class="fa-solid fa-phone"></i> Call (905) 637-1122</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--alt" id="faq">
+    <div class="container center">
+      <span class="eyebrow eyebrow--center reveal">Good to Know</span>
+      <h2 class="section-title reveal d1">Frequently asked <em>questions</em></h2>
+    </div>
+    <div class="container">
+      <div class="faq">
+        <div class="faq-item reveal">
+          <button class="faq-q">Do you work on all makes and models? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>Yes — <strong>foreign and domestic</strong>, cars, SUVs and light trucks. Our technicians service just about anything on the road.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">Will I get a quote before you start? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>Always. We diagnose first and give you a <strong>firm, upfront quote</strong> before any work begins — no surprises on the bill.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">Do you provide a warranty? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>Yes — our repairs are backed by a <strong>workmanship warranty</strong>. Ask us for the details that apply to your service.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">Do I need an appointment? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>Booking ahead guarantees your spot, but we'll always do our best to fit in <strong>urgent work</strong> — just give us a call.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">Do you do safety &amp; emissions inspections? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>We do — <strong>safety standards certificates, emissions tests</strong> and pre-purchase inspections are all available.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">How do I pay? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>We accept <strong>cash and major debit/credit cards</strong>, plus tap and mobile payments.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--tight">
+    <div class="container center">
+      <span class="eyebrow eyebrow--center reveal">Get In Touch</span>
+      <h2 class="section-title reveal d1">Talk to <em>the shop</em></h2>
+    </div>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card reveal d1"><div class="ic"><i class="fa-solid fa-phone"></i></div><h3>Call the Shop</h3><p>Fastest way to book</p><a href="tel:+19056371122">(905) 637-1122</a></div>
+        <div class="contact-card reveal d2"><div class="ic"><i class="fa-solid fa-location-dot"></i></div><h3>Visit Us</h3><p>4129 Harvester Rd</p><a href="https://www.google.com/maps/search/?api=1&query=4129+Harvester+Rd+Burlington+ON" target="_blank" rel="noopener">Burlington, ON</a></div>
+        <div class="contact-card reveal d3"><div class="ic"><i class="fa-brands fa-facebook-f"></i></div><h3>Facebook</h3><p>See our latest</p><a href="https://www.facebook.com/PretsellsAutoService/" target="_blank" rel="noopener">Pretsell's Auto Service</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo-mark.png" alt="Pretsell's Auto" class="brand-logo-f" />
+          <p>Honest, professional auto repair and maintenance for Burlington drivers. All makes and models — repairs, diagnostics, brakes, tires and more.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/PretsellsAutoService/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="tel:+19056371122" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:info@pretsellsauto.ca" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="index.html#gallery">Our Work</a><a href="book.html">Book</a></div>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <div class="footer-links"><a href="services.html">Repairs &amp; Diagnostics</a><a href="services.html">Oil &amp; Maintenance</a><a href="services.html">Brakes &amp; Tires</a><a href="services.html">Inspections</a></div>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <div class="footer-contact">
+            <span><i class="fa-solid fa-location-dot"></i> 4129 Harvester Rd, Burlington, ON</span>
+            <a href="tel:+19056371122"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
+            <span><i class="fa-solid fa-clock"></i> Mon–Fri 8–6 · Sat 9–3</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Pretsell's Auto. All rights reserved.</span>
+        <span>Auto Repair &amp; Maintenance · Burlington, ON</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#quote" class="fab-cta" aria-label="Book a service"><i class="fa-solid fa-calendar-check"></i><span>Book a Service</span></a>
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
