@@ -493,3 +493,8 @@ html { overflow-anchor: none; }                 /* stop scroll-anchoring from ji
 .ce-go i{ transition:transform .3s var(--ease); }
 .ce-band:hover .ce-go i{ transform:translateX(5px); }
 @media(max-width:680px){ .ce-band{ flex-direction:column; text-align:center; } }
+
+/* Apex logo sweep 2026-07-21 — transparent header mark: no rectangular box-shadow/tile */
+.brand-logo{ box-shadow:none !important; border-radius:0 !important; }
+/* footer: navy logo would vanish on the dark navy footer -> white silhouette */
+.footer-brand .brand-logo-f{ filter:brightness(0) invert(1); }
