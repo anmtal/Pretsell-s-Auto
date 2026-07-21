@@ -165,7 +165,7 @@ body::before {
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* ============ FEATURE / SERVICE CARDS ============ */
-.feat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 54px; }
+.feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 54px; }
 .feat-card { background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--r-lg); padding: 34px 26px; box-shadow: var(--shadow-sm); transition: transform 0.4s var(--ease), box-shadow 0.4s; }
 .feat-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
 .feat-card .ic { width: 58px; height: 58px; border-radius: 14px; display: grid; place-items: center; font-size: 1.4rem; background: var(--navy-soft); color: var(--navy); margin-bottom: 18px; }
