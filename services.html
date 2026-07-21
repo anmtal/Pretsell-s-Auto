@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services &amp; Pricing | Pretsell's Auto — Burlington, ON</title>
-  <meta name="description" content="Pretsell's Auto — auto repair and maintenance pricing in Burlington, ON. Oil changes, brakes, tires, alignments, diagnostics, batteries, A/C and safety inspections. All makes & models." />
+  <meta name="description" content="Full auto-repair services &amp; honest pricing at Pretsell's Auto in Burlington, ON — brakes, engine &amp; transmission, A/C &amp; electrical, diagnostics, oil &amp; maintenance, tires &amp; alignment. Written quotes, 12-month warranty. Call (905) 637-1122." />
   <meta name="theme-color" content="#223A73" />
-  <meta property="og:title" content="Services &amp; Pricing | Pretsell's Auto" />
-  <meta property="og:description" content="Maintenance, brakes & tires, repairs & diagnostics, and inspections. See the full price guide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pretsell's Auto" />
+  <meta property="og:title" content="Services &amp; Pricing | Pretsell's Auto — Burlington, ON" />
+  <meta property="og:description" content="Full auto-repair services grouped by system with honest, upfront pricing. Written quotes &amp; warranty-backed work — all makes &amp; models." />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +17,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Pretsell's Auto",
+    "description": "Honest, ASE-certified auto repair and maintenance in Burlington — brakes, engine, transmission, A/C, electrical, diagnostics, oil and tires. All makes & models, warranty-backed.",
+    "priceRange": "$$",
+    "telephone": "+1-905-637-1122",
+    "email": "info@pretsellsauto.ca",
+    "address": { "@type": "PostalAddress", "streetAddress": "4129 Harvester Rd", "addressLocality": "Burlington", "addressRegion": "ON", "postalCode": "L7L 5M3", "addressCountry": "CA" },
+    "areaServed": "Burlington",
+    "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-15:00"],
+    "sameAs": ["https://www.facebook.com/PretsellsAutoService/"]
+  }
+  </script>
 </head>
 <body>
 
@@ -28,8 +46,9 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="services.html" class="active">Services</a>
-        <a href="index.html#gallery">Our Work</a>
+        <a href="diagnostics.html">Check-Engine</a>
         <a href="book.html">Book</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <div class="nav-actions">
         <a href="tel:+19056371122" class="nav-phone"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
@@ -43,101 +62,178 @@
   <div class="scrim" id="scrim"></div>
   <aside class="mobile-drawer" id="drawer" aria-label="Mobile menu">
     <div class="drawer-head">
-      <img src="assets/logo-mark.png" alt="Pretsell's Auto" style="height:44px;border-radius:10px" />
+      <img src="assets/logo-mark.png" alt="Pretsell's Auto" style="height:44px" />
       <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <nav>
       <a href="index.html">Home <i class="fa-solid fa-chevron-right"></i></a>
       <a href="services.html" class="active">Services <i class="fa-solid fa-chevron-right"></i></a>
-      <a href="index.html#gallery">Our Work <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="diagnostics.html">Check-Engine Light <i class="fa-solid fa-chevron-right"></i></a>
       <a href="book.html">Book <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="contact.html">Contact <i class="fa-solid fa-chevron-right"></i></a>
     </nav>
     <div class="drawer-cta">
       <a href="book.html#quote" class="btn btn--block">Book a Service</a>
-      <a href="index.html" class="btn btn--ghost btn--block">Back Home</a>
+      <a href="tel:+19056371122" class="btn btn--navy btn--block"><i class="fa-solid fa-phone"></i> Call the Shop</a>
     </div>
     <div class="drawer-contact">
       <a href="tel:+19056371122"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
-      <span><i class="fa-solid fa-location-dot"></i> 4129 Harvester Rd, Burlington</span>
+      <span><i class="fa-solid fa-location-dot"></i> 4129 Harvester Rd, Burlington, ON</span>
     </div>
   </aside>
 
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
-    <div class="container">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="ambient-blob b1"></span>
+      <span class="ambient-blob b2"></span>
+      <span class="ambient-blob b3"></span>
+      <img class="ambient-gear g1" src="assets/gear.svg" alt="" />
+      <img class="ambient-gear g2" src="assets/gear.svg" alt="" />
+    </div>
+    <div class="container" style="position:relative;z-index:1">
       <div class="breadcrumbs reveal"><a href="index.html">Home</a> <span>/</span> <span>Services</span></div>
-      <span class="eyebrow eyebrow--center reveal d1" style="margin-top:14px">Services &amp; Pricing</span>
-      <h1 class="reveal d1">Repairs &amp; <span class="text-accent">pricing</span></h1>
-      <p class="reveal d2">Honest, upfront pricing for the services Burlington drivers need most. Prices are a starting guide — we'll always confirm with a firm quote before any work begins.</p>
+      <h1 class="reveal d1">Our Services &amp; Pricing</h1>
+      <p class="reveal d2">Everything we service, grouped by system — with honest starting prices. Every job gets a written quote before any work begins, and the prices below are guides that can vary by vehicle, parts and condition.</p>
     </div>
   </section>
 
-  <!-- ============ PRICE LIST ============ -->
-  <section class="section" style="padding-top:20px">
+  <!-- ============ PRICING BY SYSTEM ============ -->
+  <section class="section section--tight">
     <div class="container">
       <div class="price-wrap">
+
+        <!-- Brakes -->
+        <div class="price-cat reveal">
+          <h3><i class="fa-solid fa-car-burst"></i> Brakes</h3>
+          <div class="price-row"><span class="nm">Brake pads<small>Per axle · parts &amp; labour</small></span><span class="dots"></span><span class="pr">From $180</span></div>
+          <div class="price-row"><span class="nm">Rotors<small>Replace or resurface, per pair</small></span><span class="dots"></span><span class="pr">From $220</span></div>
+          <div class="price-row"><span class="nm">Brake fluid flush<small>Full system bleed</small></span><span class="dots"></span><span class="pr">From $120</span></div>
+          <div class="price-row"><span class="nm">Calipers<small>Replacement, each</small></span><span class="dots"></span><span class="pr">From $160</span></div>
+          <div class="price-row"><span class="nm">Brake inspection<small>Free with any brake service</small></span><span class="dots"></span><span class="pr">From $0</span></div>
+        </div>
+
+        <!-- Engine & Transmission -->
         <div class="price-cat reveal d1">
-          <h3><i class="fa-solid fa-oil-can"></i> Maintenance</h3>
-          <div class="price-row"><span class="nm">Oil Change<small>Synthetic blend, up to 5L</small></span><span class="dots"></span><span class="pr">$50</span></div>
-          <div class="price-row"><span class="nm">Full Synthetic Oil Change</span><span class="dots"></span><span class="pr">$80</span></div>
-          <div class="price-row"><span class="nm">Tire Rotation</span><span class="dots"></span><span class="pr">$40</span></div>
-          <div class="price-row"><span class="nm">Fluid Flush / Top-Up<small>From</small></span><span class="dots"></span><span class="pr">$60</span></div>
-          <div class="price-row"><span class="nm">Tune-Up<small>From</small></span><span class="dots"></span><span class="pr">$160</span></div>
+          <h3><i class="fa-solid fa-gears"></i> Engine &amp; Transmission</h3>
+          <div class="price-row"><span class="nm">Check-engine diagnosis<small>Scan, read codes &amp; assess</small></span><span class="dots"></span><span class="pr">From $110</span></div>
+          <div class="price-row"><span class="nm">Timing &amp; drive belts<small>Inspect &amp; replace</small></span><span class="dots"></span><span class="pr">From $320</span></div>
+          <div class="price-row"><span class="nm">Transmission fluid service<small>Drain, fill &amp; filter</small></span><span class="dots"></span><span class="pr">From $180</span></div>
+          <div class="price-row"><span class="nm">Engine tune-up<small>Plugs, filters &amp; adjustments</small></span><span class="dots"></span><span class="pr">From $160</span></div>
+          <div class="price-row"><span class="nm">Cooling system service<small>Coolant flush &amp; pressure test</small></span><span class="dots"></span><span class="pr">From $130</span></div>
         </div>
 
-        <div class="price-cat reveal d2">
-          <h3><i class="fa-solid fa-car-burst"></i> Brakes &amp; Tires</h3>
-          <div class="price-row"><span class="nm">Brake Service<small>Pads, per axle — from</small></span><span class="dots"></span><span class="pr">$180</span></div>
-          <div class="price-row"><span class="nm">Rotors / Full Brake Job<small>From</small></span><span class="dots"></span><span class="pr">$320</span></div>
-          <div class="price-row"><span class="nm">Tire Install &amp; Balance<small>Per tire</small></span><span class="dots"></span><span class="pr">$25</span></div>
-          <div class="price-row"><span class="nm">Wheel Alignment</span><span class="dots"></span><span class="pr">$110</span></div>
-          <div class="price-row"><span class="nm">Tire Repair (patch)</span><span class="dots"></span><span class="pr">$35</span></div>
+        <!-- A/C & Electrical -->
+        <div class="price-cat reveal">
+          <h3><i class="fa-solid fa-snowflake"></i> A/C &amp; Electrical</h3>
+          <div class="price-row"><span class="nm">A/C recharge &amp; leak check<small>Evacuate, recharge &amp; test</small></span><span class="dots"></span><span class="pr">From $140</span></div>
+          <div class="price-row"><span class="nm">Battery test / replace<small>Includes charging-system check</small></span><span class="dots"></span><span class="pr">From $180</span></div>
+          <div class="price-row"><span class="nm">Alternator / starter<small>Replacement, parts &amp; labour</small></span><span class="dots"></span><span class="pr">From $260</span></div>
+          <div class="price-row"><span class="nm">Electrical diagnosis<small>Lights, sensors &amp; wiring faults</small></span><span class="dots"></span><span class="pr">From $110</span></div>
         </div>
 
+        <!-- Diagnostics & Inspections -->
         <div class="price-cat reveal d1">
-          <h3><i class="fa-solid fa-gauge-high"></i> Repairs &amp; Diagnostics</h3>
-          <div class="price-row"><span class="nm">Check-Engine Diagnostics<small>From</small></span><span class="dots"></span><span class="pr">$110</span></div>
-          <div class="price-row"><span class="nm">Battery Test &amp; Replace<small>From</small></span><span class="dots"></span><span class="pr">$180</span></div>
-          <div class="price-row"><span class="nm">A/C Service &amp; Recharge<small>From</small></span><span class="dots"></span><span class="pr">$140</span></div>
-          <div class="price-row"><span class="nm">Suspension &amp; Steering<small>From</small></span><span class="dots"></span><span class="pr">$250</span></div>
+          <h3><i class="fa-solid fa-gauge-high"></i> Diagnostics &amp; Inspections</h3>
+          <div class="price-row"><span class="nm">Computer diagnostic<small>Full scan &amp; honest assessment</small></span><span class="dots"></span><span class="pr">From $110</span></div>
+          <div class="price-row"><span class="nm">Safety Standards Certificate<small>Ontario safety inspection</small></span><span class="dots"></span><span class="pr">From $90</span></div>
+          <div class="price-row"><span class="nm">Pre-purchase inspection<small>Buying used? Know before you buy</small></span><span class="dots"></span><span class="pr">From $120</span></div>
+          <div class="price-row"><span class="nm">Warning-light diagnosis<small>ABS, airbag, TPMS &amp; more</small></span><span class="dots"></span><span class="pr">From $110</span></div>
         </div>
 
-        <div class="price-cat reveal d2">
-          <h3><i class="fa-solid fa-clipboard-check"></i> Inspections</h3>
-          <div class="price-row"><span class="nm">Safety Standards Certificate<small>From</small></span><span class="dots"></span><span class="pr">$90</span></div>
-          <div class="price-row"><span class="nm">Emissions Test</span><span class="dots"></span><span class="pr">$50</span></div>
-          <div class="price-row"><span class="nm">Pre-Purchase Inspection<small>From</small></span><span class="dots"></span><span class="pr">$120</span></div>
-          <div class="price-row"><span class="nm">Seasonal / Fleet Check<small>From</small></span><span class="dots"></span><span class="pr">$70</span></div>
+        <!-- Maintenance & Oil -->
+        <div class="price-cat reveal">
+          <h3><i class="fa-solid fa-oil-can"></i> Maintenance &amp; Oil</h3>
+          <div class="price-row"><span class="nm">Oil &amp; filter change<small>Conventional / synthetic blend</small></span><span class="dots"></span><span class="pr">From $50</span></div>
+          <div class="price-row"><span class="nm">Full synthetic oil change<small>Premium oil &amp; filter</small></span><span class="dots"></span><span class="pr">From $85</span></div>
+          <div class="price-row"><span class="nm">Fluid top-ups &amp; filters<small>Air, cabin &amp; fuel filters</small></span><span class="dots"></span><span class="pr">From $40</span></div>
+          <div class="price-row"><span class="nm">Scheduled maintenance<small>Manufacturer service intervals</small></span><span class="dots"></span><span class="pr">From $120</span></div>
         </div>
+
+        <!-- Tires & Alignment -->
+        <div class="price-cat reveal d1">
+          <h3><i class="fa-solid fa-gauge"></i> Tires &amp; Alignment</h3>
+          <div class="price-row"><span class="nm">Tire change / mount<small>Per tire, mount &amp; balance</small></span><span class="dots"></span><span class="pr">From $40</span></div>
+          <div class="price-row"><span class="nm">Tire rotation<small>All four wheels</small></span><span class="dots"></span><span class="pr">From $40</span></div>
+          <div class="price-row"><span class="nm">Wheel balancing<small>Per wheel</small></span><span class="dots"></span><span class="pr">From $25</span></div>
+          <div class="price-row"><span class="nm">Wheel alignment<small>Two- or four-wheel</small></span><span class="dots"></span><span class="pr">From $110</span></div>
+          <div class="price-row"><span class="nm">Seasonal tire swap<small>Winter / summer changeover</small></span><span class="dots"></span><span class="pr">From $60</span></div>
+        </div>
+
       </div>
-
-      <div class="center" style="margin-top:44px"><a href="book.html#quote" class="btn btn--lg reveal"><i class="fa-solid fa-calendar-check"></i> Book a Service</a></div>
     </div>
   </section>
 
-  <!-- ============ THE EXPERIENCE ============ -->
-  <section class="section section--alt">
+  <!-- ============ WARRANTY & FINANCING CALLOUT ============ -->
+  <section class="section section--alt section--tight">
     <div class="container center">
-      <span class="eyebrow eyebrow--center reveal">Every Visit</span>
-      <h2 class="section-title reveal d1">Looked after, <em>start to finish</em></h2>
-      <p class="section-lead reveal d2">Great service is in the details — here's what you can always expect at Pretsell's Auto.</p>
+      <span class="eyebrow eyebrow--center reveal">Peace Of Mind</span>
+      <h2 class="section-title reveal d1">Backed by a <em>real warranty</em></h2>
+      <p class="section-lead reveal d2">Fair pricing is only half of it. Here's how we protect you on every repair, big or small.</p>
     </div>
     <div class="container">
-      <div class="feat-grid">
-        <div class="feat-card reveal d1"><div class="ic"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>Upfront Quotes</h3><p>A clear, firm quote before any work starts — no surprises.</p></div>
-        <div class="feat-card reveal d2"><div class="ic"><i class="fa-solid fa-user-gear"></i></div><h3>Licensed Techs</h3><p>Certified, experienced technicians on every job.</p></div>
-        <div class="feat-card reveal d3"><div class="ic"><i class="fa-solid fa-gears"></i></div><h3>Quality Parts</h3><p>Trusted OEM and quality aftermarket parts.</p></div>
-        <div class="feat-card reveal d4"><div class="ic"><i class="fa-solid fa-shield-halved"></i></div><h3>Warranty Backed</h3><p>Our workmanship is backed by a repair warranty.</p></div>
+      <div class="hours-grid" style="margin-top:44px">
+        <div class="hours-card reveal">
+          <div class="story-features" style="margin-top:0">
+            <div class="story-feature reveal"><span class="ic"><i class="fa-solid fa-shield-halved"></i></span><div><b>12-month / 20,000 km warranty</b><p>Parts &amp; labour on qualifying repairs — whichever comes first.</p></div></div>
+            <div class="story-feature reveal d1"><span class="ic"><i class="fa-solid fa-hand-holding-dollar"></i></span><div><b>Financing available</b><p>Flexible payment options on larger repairs — just ask us for details.</p></div></div>
+            <div class="story-feature reveal d2"><span class="ic"><i class="fa-solid fa-file-invoice-dollar"></i></span><div><b>Written quote before any work</b><p>You approve the price first. No surprise charges, ever.</p></div></div>
+          </div>
+        </div>
+        <div class="hours-card reveal d1">
+          <div class="story-features" style="margin-top:0">
+            <div class="story-feature reveal"><span class="ic"><i class="fa-solid fa-certificate"></i></span><div><b>ASE-certified technicians</b><p>Skilled, licensed work on all makes &amp; models — import &amp; domestic.</p></div></div>
+            <div class="story-feature reveal d1"><span class="ic"><i class="fa-solid fa-car"></i></span><div><b>All makes &amp; models</b><p>Cars, SUVs and light trucks — including EV/hybrid service.</p></div></div>
+            <div class="story-feature reveal d2"><span class="ic"><i class="fa-solid fa-bolt"></i></span><div><b>Same-day on many services</b><p>Oil, brakes, batteries and tires are often finished the same day.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section">
+    <div class="container center">
+      <span class="eyebrow eyebrow--center reveal">Good To Know</span>
+      <h2 class="section-title reveal d1">Pricing &amp; trust <em>questions</em></h2>
+      <p class="section-lead reveal d2">Straight answers on how we quote, warranty and charge — before you ever drop off your vehicle.</p>
+    </div>
+    <div class="container">
+      <div class="faq reveal">
+        <div class="faq-item">
+          <button class="faq-q">Do you give upfront quotes before starting work? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>Always. We inspect your vehicle, then give you a clear written quote covering parts and labour. Nothing gets done until you approve the price — no surprise charges when you pick up.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What warranty comes with a repair? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>Qualifying repairs are backed by our 12-month / 20,000 km parts &amp; labour warranty, whichever comes first. If something we covered isn't right, bring it back and we'll make it right.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you service imports and EV/hybrid vehicles? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>Yes — our ASE-certified technicians service all makes and models, import and domestic, including hybrid and EV maintenance. Not sure if we cover your vehicle? Give us a call and we'll confirm.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do I need an appointment? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>An appointment helps us get you in and out faster, so we recommend booking online or by phone. That said, we'll always do our best for walk-ins — call ahead and we'll let you know the earliest slot.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What payment methods do you accept? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>We accept debit, all major credit cards and cash. Financing is available on larger repairs — just ask and we'll walk you through the options.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Is there a diagnostic fee? <span class="ic"><i class="fa-solid fa-plus"></i></span></button>
+          <div class="faq-a"><p>Computer and check-engine diagnostics start from $110, which covers the time to properly scan, test and pinpoint the issue. If you go ahead with the repair, we'll often put that fee toward the work.</p></div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============ CTA ============ -->
-  <section class="section">
+  <section class="section section--tight">
     <div class="container">
       <div class="cta-band reveal-scale">
-        <h2>Need a service or a quote?</h2>
-        <p>Book online in seconds or call the shop — we'll get you an honest quote and back on the road.</p>
+        <h2>Ready to book?</h2>
+        <p>Get a written quote and warranty-backed service from technicians who tell you what your car actually needs — and what can wait.</p>
         <div class="hero-ctas">
           <a href="book.html#quote" class="btn btn--white btn--lg"><i class="fa-solid fa-calendar-check"></i> Book a Service</a>
           <a href="tel:+19056371122" class="btn btn--ghost btn--lg" style="border-color:rgba(255,255,255,0.5);color:#fff"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
@@ -152,7 +248,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <img src="assets/logo-mark.png" alt="Pretsell's Auto" class="brand-logo-f" />
-          <p>Honest, professional auto repair and maintenance for Burlington drivers. All makes and models — repairs, diagnostics, brakes, tires and more.</p>
+          <p>Honest, ASE-certified auto repair and maintenance for Burlington drivers. All makes and models — brakes, engine, transmission, A/C, electrical and diagnostics.</p>
           <div class="footer-social">
             <a href="https://www.facebook.com/PretsellsAutoService/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="tel:+19056371122" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
@@ -161,11 +257,11 @@
         </div>
         <div>
           <h4>Explore</h4>
-          <div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="index.html#gallery">Our Work</a><a href="book.html">Book</a></div>
+          <div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="diagnostics.html">Check-Engine</a><a href="book.html">Book</a><a href="contact.html">Contact</a></div>
         </div>
         <div>
           <h4>Services</h4>
-          <div class="footer-links"><a href="services.html">Repairs &amp; Diagnostics</a><a href="services.html">Oil &amp; Maintenance</a><a href="services.html">Brakes &amp; Tires</a><a href="services.html">Inspections</a></div>
+          <div class="footer-links"><a href="services.html">Brakes</a><a href="services.html">Engine &amp; Transmission</a><a href="services.html">A/C &amp; Electrical</a><a href="services.html">Diagnostics</a></div>
         </div>
         <div>
           <h4>Visit</h4>
@@ -182,6 +278,14 @@
       </div>
     </div>
   </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-nav prev" id="lbPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-nav next" id="lbNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    <div><img id="lbImg" src="assets/photos/g1.jpg" alt="" /><div class="lightbox-cap" id="lbCap"></div></div>
+  </div>
 
   <a href="book.html#quote" class="fab-cta" aria-label="Book a service"><i class="fa-solid fa-calendar-check"></i><span>Book a Service</span></a>
   <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>

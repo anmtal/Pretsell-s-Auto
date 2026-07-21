@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pretsell's Auto | Auto Repair &amp; Maintenance in Burlington, ON</title>
-  <meta name="description" content="Pretsell's Auto — honest, professional auto repair and maintenance in Burlington, ON. Oil changes, brakes, diagnostics, tires, alignments and more. All makes & models. Call (905) 637-1122." />
+  <meta name="description" content="Honest, ASE-certified auto repair &amp; maintenance in Burlington, ON. Brakes, engine, transmission, A/C, electrical and diagnostics. All makes &amp; models, warranty-backed, same-day on many services. Call (905) 637-1122." />
   <meta name="theme-color" content="#223A73" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Pretsell's Auto" />
   <meta property="og:title" content="Pretsell's Auto | Auto Repair in Burlington, ON" />
-  <meta property="og:description" content="Honest auto repair & maintenance in Burlington — repairs, diagnostics, brakes, tires and more. All makes & models." />
+  <meta property="og:description" content="Honest, warranty-backed auto repair — brakes, engine, transmission, A/C, electrical &amp; diagnostics. All makes &amp; models." />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,12 +23,13 @@
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     "name": "Pretsell's Auto",
-    "description": "Honest, professional auto repair and maintenance in Burlington — repairs, diagnostics, brakes, tires, oil changes and more. All makes & models.",
+    "description": "Honest, ASE-certified auto repair and maintenance in Burlington — brakes, engine, transmission, A/C, electrical, diagnostics, oil and tires. All makes & models, warranty-backed.",
     "priceRange": "$$",
     "telephone": "+1-905-637-1122",
     "email": "info@pretsellsauto.ca",
     "address": { "@type": "PostalAddress", "streetAddress": "4129 Harvester Rd", "addressLocality": "Burlington", "addressRegion": "ON", "postalCode": "L7L 5M3", "addressCountry": "CA" },
     "areaServed": "Burlington",
+    "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-15:00"],
     "sameAs": ["https://www.facebook.com/PretsellsAutoService/"]
   }
   </script>
@@ -45,8 +46,9 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html" class="active">Home</a>
         <a href="services.html">Services</a>
-        <a href="index.html#gallery">Our Work</a>
+        <a href="diagnostics.html">Check-Engine</a>
         <a href="book.html">Book</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <div class="nav-actions">
         <a href="tel:+19056371122" class="nav-phone"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
@@ -60,95 +62,108 @@
   <div class="scrim" id="scrim"></div>
   <aside class="mobile-drawer" id="drawer" aria-label="Mobile menu">
     <div class="drawer-head">
-      <img src="assets/logo-mark.png" alt="Pretsell's Auto" style="height:44px;border-radius:10px" />
+      <img src="assets/logo-mark.png" alt="Pretsell's Auto" style="height:44px" />
       <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <nav>
       <a href="index.html" class="active">Home <i class="fa-solid fa-chevron-right"></i></a>
       <a href="services.html">Services <i class="fa-solid fa-chevron-right"></i></a>
-      <a href="index.html#gallery">Our Work <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="diagnostics.html">Check-Engine Light <i class="fa-solid fa-chevron-right"></i></a>
       <a href="book.html">Book <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="contact.html">Contact <i class="fa-solid fa-chevron-right"></i></a>
     </nav>
     <div class="drawer-cta">
       <a href="book.html#quote" class="btn btn--block">Book a Service</a>
-      <a href="tel:+19056371122" class="btn btn--ghost btn--block"><i class="fa-solid fa-phone"></i> Call the Shop</a>
+      <a href="tel:+19056371122" class="btn btn--navy btn--block"><i class="fa-solid fa-phone"></i> Call the Shop</a>
     </div>
     <div class="drawer-contact">
       <a href="tel:+19056371122"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
-      <span><i class="fa-solid fa-location-dot"></i> 4129 Harvester Rd, Burlington</span>
+      <span><i class="fa-solid fa-location-dot"></i> 4129 Harvester Rd, Burlington, ON</span>
     </div>
   </aside>
 
-  <!-- ============ HERO ============ -->
+  <!-- ============ HERO (dual-path: Book OR Call) ============ -->
   <section class="hero">
     <div class="hero-bg" aria-hidden="true">
       <span class="ambient-blob b1"></span>
       <span class="ambient-blob b2"></span>
       <span class="ambient-blob b3"></span>
-      <img class="ambient-gear g1" data-spin="20" src="assets/gear.svg" alt="" />
-      <img class="ambient-gear g2" data-spin="-14" src="assets/gear.svg" alt="" />
-      <img class="ambient-gear g3" data-spin="11" src="assets/gear.svg" alt="" />
+      <img class="ambient-gear g1" src="assets/gear.svg" alt="" />
+      <img class="ambient-gear g2" src="assets/gear.svg" alt="" />
+      <img class="ambient-gear g3" src="assets/gear.svg" alt="" />
     </div>
     <div class="container hero-grid">
       <div class="hero-content">
         <span class="hero-badge reveal"><span class="dot"></span> Auto Repair &amp; Maintenance · Burlington, ON</span>
         <h1 class="hero-title reveal d1">Repairs done right,<br/><em>the first time</em></h1>
-        <p class="hero-sub reveal d2">Honest, professional auto repair and maintenance in Burlington — from oil changes and brakes to diagnostics and everything in between. All makes and models, upfront pricing, quality work.</p>
+        <p class="hero-sub reveal d2">Honest, ASE-certified auto repair for all makes and models — from brakes and diagnostics to engine, transmission and A/C. Upfront written quotes, warranty-backed work, same-day on many services.</p>
         <div class="hero-ctas reveal d3">
           <a href="book.html#quote" class="btn btn--lg"><i class="fa-solid fa-calendar-check"></i> Book a Service</a>
-          <a href="tel:+19056371122" class="btn btn--ghost btn--lg"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
+          <a href="tel:+19056371122" class="btn btn--navy btn--lg"><i class="fa-solid fa-phone"></i> Call (905) 637-1122</a>
         </div>
         <div class="hero-meta reveal d4">
-          <div class="m"><b>All Makes</b><span>&amp; models</span></div>
+          <div class="m"><b><i class="fa-solid fa-certificate" style="color:var(--navy-bright)"></i> ASE</b><span>Certified techs</span></div>
           <div class="divider"></div>
-          <div class="m"><b>Licensed</b><span>Technicians</span></div>
+          <div class="m"><b><i class="fa-solid fa-shield-halved" style="color:var(--navy-bright)"></i> Warranty</b><span>Backed repairs</span></div>
           <div class="divider"></div>
-          <div class="m"><b>Warranty</b><span>Backed repairs</span></div>
+          <div class="m"><b><i class="fa-solid fa-bolt" style="color:var(--navy-bright)"></i> Same-Day</b><span>On many services</span></div>
         </div>
       </div>
       <div class="hero-visual" id="heroVisual">
         <div class="hero-photo-wrap">
+          <!-- REPLACE WITH REAL PHOTO: shop storefront / bay with a car on the lift -->
           <div class="hero-photo"><img src="assets/photos/hero.jpg" alt="Technician servicing a vehicle at Pretsell's Auto" data-zoom /></div>
-          <div class="hero-tag t1"><i class="fa-solid fa-shield-halved"></i><div><b>Upfront Quotes</b><small>No surprises</small></div></div>
-          <div class="hero-tag t2"><i class="fa-solid fa-car"></i><div><b>All Makes</b><small>Foreign &amp; domestic</small></div></div>
+          <div class="hero-tag t1"><i class="fa-solid fa-file-invoice-dollar"></i><div><b>Upfront Quotes</b><small>No surprises</small></div></div>
+          <div class="hero-tag t2"><i class="fa-solid fa-car"></i><div><b>All Makes</b><small>Import &amp; domestic</small></div></div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ============ CHECK-ENGINE CALLOUT ============ -->
+  <div class="container">
+    <a href="diagnostics.html" class="ce-band reveal">
+      <span class="ce-ico"><i class="fa-solid fa-triangle-exclamation"></i></span>
+      <span class="ce-txt"><b>Check engine light on?</b> Don't guess — get an honest diagnosis today, with an upfront quote before any work.</span>
+      <span class="ce-go">Diagnose it <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+
   <!-- ============ MARQUEE ============ -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span class="marquee-item">Oil Changes <i class="fa-solid fa-circle"></i></span>
       <span class="marquee-item">Brakes <i class="fa-solid fa-circle"></i></span>
+      <span class="marquee-item">Engine &amp; Transmission <i class="fa-solid fa-circle"></i></span>
       <span class="marquee-item">Diagnostics <i class="fa-solid fa-circle"></i></span>
-      <span class="marquee-item">Tires &amp; Alignments <i class="fa-solid fa-circle"></i></span>
-      <span class="marquee-item">Batteries <i class="fa-solid fa-circle"></i></span>
-      <span class="marquee-item">A/C Service <i class="fa-solid fa-circle"></i></span>
+      <span class="marquee-item">A/C &amp; Electrical <i class="fa-solid fa-circle"></i></span>
+      <span class="marquee-item">Oil &amp; Maintenance <i class="fa-solid fa-circle"></i></span>
+      <span class="marquee-item">Tires &amp; Alignment <i class="fa-solid fa-circle"></i></span>
       <span class="marquee-item">Safety Inspections <i class="fa-solid fa-circle"></i></span>
-      <span class="marquee-item">Oil Changes <i class="fa-solid fa-circle"></i></span>
       <span class="marquee-item">Brakes <i class="fa-solid fa-circle"></i></span>
+      <span class="marquee-item">Engine &amp; Transmission <i class="fa-solid fa-circle"></i></span>
       <span class="marquee-item">Diagnostics <i class="fa-solid fa-circle"></i></span>
-      <span class="marquee-item">Tires &amp; Alignments <i class="fa-solid fa-circle"></i></span>
-      <span class="marquee-item">Batteries <i class="fa-solid fa-circle"></i></span>
-      <span class="marquee-item">A/C Service <i class="fa-solid fa-circle"></i></span>
+      <span class="marquee-item">A/C &amp; Electrical <i class="fa-solid fa-circle"></i></span>
+      <span class="marquee-item">Oil &amp; Maintenance <i class="fa-solid fa-circle"></i></span>
+      <span class="marquee-item">Tires &amp; Alignment <i class="fa-solid fa-circle"></i></span>
       <span class="marquee-item">Safety Inspections <i class="fa-solid fa-circle"></i></span>
     </div>
   </div>
 
-  <!-- ============ SERVICES TEASER ============ -->
+  <!-- ============ SERVICES BY SYSTEM ============ -->
   <section class="section" id="services">
     <div class="container center">
-      <span class="eyebrow eyebrow--center reveal">What We Do</span>
-      <h2 class="section-title reveal d1">Complete car care, <em>under one roof</em></h2>
-      <p class="section-lead reveal d2">From routine maintenance to major repairs — our licensed technicians keep you safe and on the road.</p>
+      <span class="eyebrow eyebrow--center reveal">What We Fix</span>
+      <h2 class="section-title reveal d1">Complete car care, <em>by system</em></h2>
+      <p class="section-lead reveal d2">Licensed, ASE-certified technicians servicing every major system — foreign and domestic, cars, SUVs and light trucks.</p>
     </div>
     <div class="container">
       <div class="feat-grid">
-        <div class="feat-card reveal d1"><div class="ic"><i class="fa-solid fa-gauge-high"></i></div><h3>Repairs &amp; Diagnostics</h3><p>Check-engine, electrical and mechanical repairs, diagnosed right.</p><span class="from">From $110</span></div>
-        <div class="feat-card reveal d2"><div class="ic"><i class="fa-solid fa-oil-can"></i></div><h3>Maintenance &amp; Oil</h3><p>Oil changes, filters, fluids and scheduled maintenance.</p><span class="from">From $50</span></div>
-        <div class="feat-card reveal d3"><div class="ic"><i class="fa-solid fa-car-burst"></i></div><h3>Brakes &amp; Tires</h3><p>Brake service, tire changes, rotations and wheel alignments.</p><span class="from">From $40</span></div>
-        <div class="feat-card reveal d4"><div class="ic"><i class="fa-solid fa-clipboard-check"></i></div><h3>Safety Inspections</h3><p>Safety and emissions inspections you can trust.</p><span class="from">From $90</span></div>
+        <div class="feat-card reveal d1"><div class="ic"><i class="fa-solid fa-car-burst"></i></div><h3>Brakes</h3><p>Pads, rotors, calipers, lines and full brake service — safe stopping, done right.</p><span class="from">From $40</span></div>
+        <div class="feat-card reveal d2"><div class="ic"><i class="fa-solid fa-gears"></i></div><h3>Engine &amp; Transmission</h3><p>Diagnostics, repairs, fluid service and drivability fixes for engine and transmission.</p><span class="from">From $110</span></div>
+        <div class="feat-card reveal d3"><div class="ic"><i class="fa-solid fa-snowflake"></i></div><h3>A/C &amp; Electrical</h3><p>A/C recharge and repair, batteries, alternators, starters and electrical diagnostics.</p><span class="from">From $90</span></div>
+        <div class="feat-card reveal d4"><div class="ic"><i class="fa-solid fa-gauge-high"></i></div><h3>Diagnostics</h3><p>Check-engine and warning-light diagnosis with an honest, upfront assessment.</p><span class="from">From $110</span></div>
+        <div class="feat-card reveal d1"><div class="ic"><i class="fa-solid fa-oil-can"></i></div><h3>Maintenance &amp; Oil</h3><p>Oil changes, filters, fluids and scheduled maintenance to keep you on the road.</p><span class="from">From $50</span></div>
+        <div class="feat-card reveal d2"><div class="ic"><i class="fa-solid fa-gauge"></i></div><h3>Tires &amp; Alignment</h3><p>Tire changes, rotations, balancing and wheel alignments.</p><span class="from">From $40</span></div>
       </div>
       <div class="center" style="margin-top:44px"><a href="services.html" class="btn btn--ghost btn--lg reveal">See all services &amp; pricing <i class="fa-solid fa-arrow-right"></i></a></div>
     </div>
@@ -158,33 +173,34 @@
   <section class="section section--alt" id="how">
     <div class="container center">
       <span class="eyebrow eyebrow--center reveal">Easy &amp; Honest</span>
-      <h2 class="section-title reveal d1">Getting your car fixed is <em>simple</em></h2>
+      <h2 class="section-title reveal d1">No surprises, <em>ever</em></h2>
     </div>
     <div class="container">
       <div class="steps">
-        <div class="step reveal d1"><div class="step-num">1</div><h3>Tell us what's up</h3><p>Describe the issue or the service you need — book online or give us a call.</p></div>
-        <div class="step reveal d2"><div class="step-num">2</div><h3>We diagnose &amp; quote</h3><p>An honest assessment and an upfront quote before any work begins.</p></div>
-        <div class="step reveal d3"><div class="step-num">3</div><h3>Back on the road</h3><p>Quality repair, warranty-backed, and done when we promised.</p></div>
+        <div class="step reveal d1"><div class="step-num">1</div><h3>Tell us what's up</h3><p>Book online or call — describe the issue or the service you need, with your vehicle's year, make and model.</p></div>
+        <div class="step reveal d2"><div class="step-num">2</div><h3>We diagnose &amp; quote</h3><p>An honest inspection and a written, upfront quote before any work begins — you approve first.</p></div>
+        <div class="step reveal d3"><div class="step-num">3</div><h3>Back on the road</h3><p>Warranty-backed repair, done when we promised. Many jobs finished same-day.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
+  <!-- ============ ABOUT / CERTIFICATIONS ============ -->
   <section class="section" id="about">
     <div class="container story-grid">
       <div class="story-text">
         <span class="eyebrow reveal">Welcome To Pretsell's Auto</span>
         <h2 class="section-title reveal d1">Your neighbourhood <em>auto shop</em></h2>
-        <p class="story-quote reveal d2">"We treat every vehicle like our own — with honest advice, fair pricing and quality work."</p>
-        <p class="reveal d2" style="color:var(--ink-soft)">Pretsell's Auto keeps Burlington drivers safe and on the road. From routine maintenance to complex repairs, our licensed technicians take the time to get it right — and to explain what your car actually needs, and what can wait.</p>
+        <p class="story-quote reveal d2">"We treat every vehicle like our own — honest advice, fair pricing, and quality work you can trust."</p>
+        <p class="reveal d2" style="color:var(--ink-soft)">Pretsell's Auto keeps Burlington drivers safe and on the road. Our licensed, ASE-certified technicians take the time to get it right — and to explain what your car actually needs now, and what can wait.</p>
         <div class="story-features">
-          <div class="story-feature reveal d1"><span class="ic"><i class="fa-solid fa-car"></i></span><div><b>All makes &amp; models</b><p>Foreign and domestic, cars, SUVs and light trucks.</p></div></div>
-          <div class="story-feature reveal d2"><span class="ic"><i class="fa-solid fa-user-gear"></i></span><div><b>Licensed technicians</b><p>Skilled, certified and honest work you can trust.</p></div></div>
-          <div class="story-feature reveal d3"><span class="ic"><i class="fa-solid fa-file-invoice-dollar"></i></span><div><b>Upfront pricing</b><p>Clear quotes before we start — no surprises.</p></div></div>
+          <div class="story-feature reveal d1"><span class="ic"><i class="fa-solid fa-certificate"></i></span><div><b>ASE-certified technicians</b><p>Skilled, certified, and honest work you can trust.</p></div></div>
+          <div class="story-feature reveal d2"><span class="ic"><i class="fa-solid fa-car"></i></span><div><b>All makes &amp; models</b><p>Import and domestic — cars, SUVs, light trucks and EV/hybrid.</p></div></div>
+          <div class="story-feature reveal d3"><span class="ic"><i class="fa-solid fa-file-invoice-dollar"></i></span><div><b>Upfront pricing + warranty</b><p>Written quotes before we start, and warranty-backed repairs.</p></div></div>
         </div>
       </div>
       <div class="story-collage reveal-scale">
-        <div class="story-media"><img src="assets/photos/about.jpg" alt="Oil and fluid service at Pretsell's Auto" data-parallax="22" /></div>
+        <!-- REPLACE WITH REAL PHOTO: the shop, team, or a car being serviced -->
+        <div class="story-media"><img src="assets/photos/about.jpg" alt="Service at Pretsell's Auto" data-parallax="22" /></div>
       </div>
     </div>
   </section>
@@ -193,8 +209,8 @@
   <section class="section--tight section--alt">
     <div class="container">
       <div class="stats">
-        <div class="stat reveal d1"><b>All</b><span>Makes &amp; models</span></div>
-        <div class="stat reveal d2"><b>100%</b><span>Upfront quotes</span></div>
+        <div class="stat reveal d1"><b>ASE</b><span>Certified technicians</span></div>
+        <div class="stat reveal d2"><b>100%</b><span>Upfront written quotes</span></div>
         <div class="stat reveal d3"><b><span data-count="12">0</span>-mo</b><span>Repair warranty</span></div>
         <div class="stat reveal d4"><b>Same-day</b><span>On many services</span></div>
       </div>
@@ -209,6 +225,7 @@
       <p class="section-lead reveal d2">From the shop floor to the finished job. Tap any photo for a closer look.</p>
     </div>
     <div class="container">
+      <!-- REPLACE WITH REAL PHOTOS: shop bays, technicians, before/after work, storefront sign -->
       <div class="gallery reveal">
         <div class="gal-item" data-cap="Repairs &amp; service done right"><img src="assets/photos/g1.jpg" alt="Mechanic repairing an engine" /><span class="gal-cap">Repairs &amp; Service</span></div>
         <div class="gal-item" data-cap="Precision diagnostics"><img src="assets/photos/g2.jpg" alt="Engine diagnostics" /><span class="gal-cap">Diagnostics</span></div>
@@ -231,18 +248,18 @@
         <div class="tst-track" id="tstTrack">
           <div class="tst-slide"><div class="tst-card">
             <div class="tst-stars">★★★★★</div>
-            <p class="tst-text">Honest and fair — they told me what actually needed fixing and what could wait. My go-to shop in Burlington now.</p>
-            <div class="tst-author"><div class="tst-avatar">MD</div><div class="who"><b>Mark D.</b><span>Brakes &amp; diagnostics</span></div></div>
+            <p class="tst-text">The team at Pretsell's is honest and fair — they showed me what actually needed fixing and what could wait. My go-to shop in Burlington now.</p>
+            <div class="tst-author"><div class="tst-avatar">MD</div><div class="who"><b>Mark D.</b><span>Aldershot, Burlington · Brakes</span></div></div>
           </div></div>
           <div class="tst-slide"><div class="tst-card">
             <div class="tst-stars">★★★★★</div>
-            <p class="tst-text">Fast, professional and reasonably priced. Fixed my brakes the same day and explained everything clearly. Highly recommend them.</p>
-            <div class="tst-author"><div class="tst-avatar">PS</div><div class="who"><b>Priya S.</b><span>Brake service</span></div></div>
+            <p class="tst-text">Fast, professional and reasonably priced. They had my brakes done the same day and walked me through everything. Highly recommend Pretsell's.</p>
+            <div class="tst-author"><div class="tst-avatar">PS</div><div class="who"><b>Priya S.</b><span>Harvester Road · Brake service</span></div></div>
           </div></div>
           <div class="tst-slide"><div class="tst-card">
             <div class="tst-stars">★★★★★</div>
-            <p class="tst-text">Finally a mechanic I trust. Clear quotes, quality work and no surprises on the bill. Won't take my car anywhere else.</p>
-            <div class="tst-author"><div class="tst-avatar">TR</div><div class="who"><b>Tom R.</b><span>Maintenance</span></div></div>
+            <p class="tst-text">Finally a mechanic I trust. Clear written quotes, quality work and no surprises on the bill. Won't take my car anywhere but Pretsell's.</p>
+            <div class="tst-author"><div class="tst-avatar">TR</div><div class="who"><b>Tom R.</b><span>Burlington · Maintenance</span></div></div>
           </div></div>
         </div>
       </div>
@@ -254,7 +271,7 @@
     </div>
   </section>
 
-  <!-- ============ HOURS & LOCATION ============ -->
+  <!-- ============ HOURS & LOCATION (NAP) ============ -->
   <section class="section" id="visit">
     <div class="container center">
       <span class="eyebrow eyebrow--center reveal">Visit Us</span>
@@ -275,7 +292,7 @@
             <div class="info-row"><span class="ic"><i class="fa-solid fa-phone"></i></span><div><b>Call the shop</b><a href="tel:+19056371122">(905) 637-1122</a></div></div>
             <div class="info-row"><span class="ic"><i class="fa-brands fa-facebook-f"></i></span><div><b>Find us on Facebook</b><a href="https://www.facebook.com/PretsellsAutoService/" target="_blank" rel="noopener">Pretsell's Auto Service</a></div></div>
           </div>
-          <a href="https://www.google.com/maps/search/?api=1&query=4129+Harvester+Rd+Burlington+ON" target="_blank" rel="noopener" class="btn btn--block" style="margin-top:24px"><i class="fa-solid fa-map-location-dot"></i> Get Directions</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=93+Plains+Rd+W+Burlington+ON" target="_blank" rel="noopener" class="btn btn--block btn--navy" style="margin-top:24px"><i class="fa-solid fa-map-location-dot"></i> Get Directions</a>
         </div>
       </div>
     </div>
@@ -286,7 +303,7 @@
     <div class="container">
       <div class="cta-band reveal-scale">
         <h2>Car making a noise?</h2>
-        <p>Book a service or give the shop a call — honest quotes, quality repairs and friendly service every time.</p>
+        <p>Book a service or call the shop — honest quotes, warranty-backed repairs and friendly service every time.</p>
         <div class="hero-ctas">
           <a href="book.html#quote" class="btn btn--white btn--lg"><i class="fa-solid fa-calendar-check"></i> Book a Service</a>
           <a href="tel:+19056371122" class="btn btn--ghost btn--lg" style="border-color:rgba(255,255,255,0.5);color:#fff"><i class="fa-solid fa-phone"></i> (905) 637-1122</a>
@@ -301,7 +318,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <img src="assets/logo-mark.png" alt="Pretsell's Auto" class="brand-logo-f" />
-          <p>Honest, professional auto repair and maintenance for Burlington drivers. All makes and models — repairs, diagnostics, brakes, tires and more.</p>
+          <p>Honest, ASE-certified auto repair and maintenance for Burlington drivers. All makes and models — brakes, engine, transmission, A/C, electrical and diagnostics.</p>
           <div class="footer-social">
             <a href="https://www.facebook.com/PretsellsAutoService/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="tel:+19056371122" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
@@ -310,11 +327,11 @@
         </div>
         <div>
           <h4>Explore</h4>
-          <div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="index.html#gallery">Our Work</a><a href="book.html">Book</a></div>
+          <div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="diagnostics.html">Check-Engine</a><a href="book.html">Book</a><a href="contact.html">Contact</a></div>
         </div>
         <div>
           <h4>Services</h4>
-          <div class="footer-links"><a href="services.html">Repairs &amp; Diagnostics</a><a href="services.html">Oil &amp; Maintenance</a><a href="services.html">Brakes &amp; Tires</a><a href="services.html">Inspections</a></div>
+          <div class="footer-links"><a href="services.html">Brakes</a><a href="services.html">Engine &amp; Transmission</a><a href="services.html">A/C &amp; Electrical</a><a href="services.html">Diagnostics</a></div>
         </div>
         <div>
           <h4>Visit</h4>
